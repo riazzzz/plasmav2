@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bb"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110sp"
+        android:fontFamily="cursive"
+        android:text="Login"
+
+        android:textColor="@color/redt"
+        android:textSize="42sp"
+
+        />
+
+    <EditText
+
+        android:id="@+id/login_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80sp"
+        android:drawableLeft="@drawable/ic_name"
+        android:drawablePadding="@dimen/drawable_padding"
+        android:hint="@string/Enter_name"
+        android:nextFocusDown="@id/edit_text_email"
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorHint"
+        android:textSize="20sp" />
+
+    <EditText
+
+        android:id="@+id/login_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:drawableLeft="@drawable/ic_password"
+        android:drawablePadding="@dimen/drawable_padding"
+        android:hint="@string/Enter_pass"
+        android:nextFocusDown="@id/edit_text_email"
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorHint"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/login_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/bg_button_register"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textColor="@color/colorText" />
+
+
+    <Button
+        android:id="@+id/login_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/bg_button_register"
+        android:text="@string/register"
+        android:textAllCaps="false"
+        android:textColor="@color/colorText" />
+
+</LinearLayout>
