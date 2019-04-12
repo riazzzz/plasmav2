@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    tools:context=".About">
+
+
+    <TextView
+
+        android:layout_marginLeft="110sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:textSize="42sp"
+
+
+        android:fontFamily="cursive"
+        android:textColor="@color/redt"
+
+        />
+
+    <TextView
+
+        android:layout_marginTop="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about_us"
+        android:textSize="20sp"
+
+
+        android:fontFamily="cursive"
+        android:textColor="#836eed"
+
+        />
+
+    <TextView
+
+        android:layout_marginTop="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed By:"
+        android:textSize="20sp"
+
+
+        android:fontFamily="cursive"
+        android:textColor="@color/redt"
+
+
+        />
+
+    <TextView
+
+        android:layout_marginTop="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name1"
+        android:textSize="20sp"
+
+
+        android:fontFamily="cursive"
+        android:textColor="#836eed"
+
+        />
+
+    <TextView
+
+        android:layout_marginTop="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Id1"
+        android:textSize="20sp"
+
+
+        android:fontFamily="cursive"
+        android:textColor="#836eed"
+
+        />
+
+    <TextView
+
+        android:layout_marginTop="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name2"
+        android:textSize="20sp"
+
+
+        android:fontFamily="cursive"
+        android:textColor="#836eed"
+
+        />
+
+    <TextView
+
+        android:layout_marginTop="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Id2"
+        android:textSize="20sp"
+
+
+        android:fontFamily="cursive"
+        android:textColor="#836eed"
+
+        />
+
+
+    <TextView
+
+        android:layout_marginTop="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name3"
+        android:textSize="20sp"
+
+
+        android:fontFamily="cursive"
+        android:textColor="#836eed"
+
+        />
+
+    <TextView
+
+        android:layout_marginTop="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Id3"
+        android:textSize="20sp"
+
+
+        android:fontFamily="cursive"
+        android:textColor="#836eed"
+
+        />
+
+
+
+</LinearLayout>

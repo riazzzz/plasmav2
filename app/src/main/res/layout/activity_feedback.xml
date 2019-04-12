@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bb"
+
+    tools:context=".Feedback">
+
+    <TextView
+        android:layout_marginLeft="110sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feedback"
+        android:textSize="42sp"
+
+
+        android:fontFamily="cursive"
+        android:textColor="@color/redt"
+
+        />
+    
+
+
+        <EditText
+
+            android:paddingLeft="10sp"
+            android:layout_marginTop="80sp"
+            android:id="@+id/feedback_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_name"
+            android:drawablePadding="@dimen/drawable_padding"
+            android:hint="@string/full_name"
+            android:nextFocusDown="@id/feedback_comment"
+            android:textColor="@color/colorText"
+            android:textColorHint="@color/colorHint" />
+
+    <EditText
+
+        android:paddingLeft="10sp"
+
+        android:id="@+id/feedback_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_name"
+        android:drawablePadding="@dimen/drawable_padding"
+        android:hint="Enter your comment"
+        android:nextFocusDown="@id/edit_text_email"
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorHint" />
+
+    <Button
+        android:layout_marginTop="20sp"
+        android:id="@+id/feedback_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button_register"
+        android:text="Send"
+        android:textAllCaps="false"
+        android:textColor="@color/colorText" />
+
+    <Button
+        android:layout_marginTop="20sp"
+        android:id="@+id/feedback_clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button_register"
+        android:text="Clear"
+        android:textAllCaps="false"
+        android:textColor="@color/colorText" />
+
+
+</LinearLayout>

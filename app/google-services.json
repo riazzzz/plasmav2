@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "612750066744",
+    "firebase_url": "https://plasma-fd3f4.firebaseio.com",
+    "project_id": "plasma-fd3f4",
+    "storage_bucket": "plasma-fd3f4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:612750066744:android:51e46e16ffdf3e25",
+        "android_client_info": {
+          "package_name": "com.tri.plasma"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "612750066744-mpo3jmcfleb6nfvv01fl1t2id2pococ6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tri.plasma",
+            "certificate_hash": "c78e48b1363d18a823a34bc6405fd827680ff1df"
+          }
+        },
+        {
+          "client_id": "612750066744-e2pi7jdtlrmt0qmkpvj47fbptsm2qjhj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVZImqQuqrFnl2HRHzbCmytZ1HCeMvXM8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "612750066744-e2pi7jdtlrmt0qmkpvj47fbptsm2qjhj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
