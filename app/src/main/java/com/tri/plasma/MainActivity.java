@@ -18,7 +18,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private EditText editTextName, editTextEmail, editTextPassword, editTextPhone,editTextblood;
+    private EditText editTextName, editTextEmail, editTextPassword, editTextPhone,editTextblood,editTextadd;
     private ProgressBar progressBar;
 
     private FirebaseAuth mAuth;
@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         editTextPassword = findViewById(R.id.edit_text_password);
         editTextPhone = findViewById(R.id.edit_text_phone);
         editTextblood = findViewById(R.id.edit_text_blood);
+        editTextadd = findViewById(R.id.edit_text_add);
         progressBar = findViewById(R.id.progressbar);
         progressBar.setVisibility(View.GONE);
 
@@ -56,6 +57,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String password = editTextPassword.getText().toString().trim();
         final String phone = editTextPhone.getText().toString().trim();
         final String blood = editTextblood.getText().toString().trim();
+        final String add = editTextadd.getText().toString().trim();
 
         if (name.isEmpty()) {
             editTextName.setError(getString(R.string.input_error_name));
@@ -103,6 +105,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             editTextblood.requestFocus();
             return;
         }
+        if (add.isEmpty()) {
+            editTextadd.setError(getString(R.string.input_error_add));
+            editTextadd.requestFocus();
+            return;
+        }
 
        /* if ((blood=="a+")||(blood=="b+")||(blood=="a-")||(blood=="b-")||(blood=="ab+")||(blood=="ab-")||(blood=="o+")||(blood=="o-")) {
             editTextblood.setError(getString(R.string.input_error_blood));
@@ -125,7 +132,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                     name,
                                     email,
                                     phone,
-                                    blood
+                                    blood,
+                                    add
                             );
 
 

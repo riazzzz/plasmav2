@@ -6,13 +6,40 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
 public class Home extends AppCompatActivity {
+
+    private Button btn;
+    private RadioGroup radioGroup;
+    private RadioButton radioButton;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        radioGroup=(RadioGroup) findViewById(R.id.radio_blood);
+
+        btn=(Button) findViewById(R.id.search);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                int selectid= radioGroup.getCheckedRadioButtonId();
+                radioButton=(RadioButton) findViewById(selectid);
+                String value=radioButton.getText().toString();
+
+
+                Intent intent=new Intent(Home.this,Details.class);
+                intent.putExtra("tag",value);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override

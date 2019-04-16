@@ -1,12 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bb"
+    android:orientation="vertical"
     tools:context=".Home">
 
 
+    <TextView
 
-</android.support.constraint.ConstraintLayout>
+        android:layout_marginLeft="160sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search Donar"
+        android:textSize="42sp"
+
+
+        android:fontFamily="cursive"
+        android:textColor="@color/dark"
+
+        />
+    
+    
+    <TextView
+        android:paddingTop="30sp"
+        android:paddingLeft="20sp"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select blood group"
+        android:textColor="#ff22"
+        />
+
+    <RadioGroup
+        android:paddingLeft="20sp"
+        android:paddingTop="20sp"
+        android:id="@+id/radio_blood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fcfcfc"
+        >
+
+
+    <RadioButton
+        android:textSize="20sp"
+        android:id="@+id/radio_A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A+"
+        android:textColor="#fcfcfc"
+
+        />
+
+        <RadioButton
+            android:textSize="20sp"
+            android:id="@+id/radio_A-"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A-"
+            android:textColor="#fcfcfc"
+            />
+
+
+        <RadioButton
+            android:textSize="20sp"
+            android:id="@+id/radio_Ab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AB+"
+            android:textColor="#fcfcfc"
+            />
+
+        <RadioButton
+            android:textSize="20sp"
+            android:id="@+id/radio_Ab-"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AB-"
+            android:textColor="#fcfcfc"
+            />
+
+        <RadioButton
+            android:textSize="20sp"
+            android:id="@+id/radio_B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B+"
+            android:textColor="#fcfcfc"
+            />
+
+        <RadioButton
+            android:textSize="20sp"
+            android:id="@+id/radio_B-"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B-"
+            android:textColor="#fcfcfc"
+            />
+
+        <RadioButton
+            android:textSize="20sp"
+            android:id="@+id/radio_O"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O+"
+            android:textColor="#fcfcfc"
+            />
+
+        <RadioButton
+            android:textSize="20sp"
+            android:id="@+id/radio_O-"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O-"
+            android:textColor="#fcfcfc"
+            />
+
+    </RadioGroup>
+
+
+
+
+    <Button
+        android:layout_marginTop="30sp"
+        android:background="@drawable/bg_button_register"
+        android:textColor="@color/colorText"
+        android:text="search"
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>

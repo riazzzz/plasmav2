@@ -23,7 +23,8 @@
         </activity>
         <activity android:name=".Home" />
         <activity android:name=".Feedback" />
-        <activity android:name=".About"></activity>
+        <activity android:name=".About" />
+        <activity android:name=".Details"></activity>
     </application>
 
 </manifest>

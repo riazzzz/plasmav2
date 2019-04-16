@@ -20,6 +20,7 @@
     <string name="password">password</string>
     <string name="phone">phone</string>
     <string name="blood">blood group</string>
+    <string name="add">your address</string>
     <string name="register">Register</string>
     <string name="login">Login</string>
     <string name="input_error_name">name required</string>
@@ -27,6 +28,7 @@
     <string name="input_error_password">password required</string>
     <string name="input_error_phone">phone required</string>
     <string name="input_error_blood"> invalid blood type </string>
+    <string name="input_error_add"> enter address </string>
     <string name="input_error_password_length">password should be atleast 6 characters long</string>
     <string name="input_error_phone_invalid">enter a valid phone number</string>
     <string name="registration_success">Registered Successfully</string>

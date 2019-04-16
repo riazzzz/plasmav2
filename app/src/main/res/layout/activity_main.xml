@@ -14,7 +14,7 @@
         android:fontFamily="cursive"
         android:text="@string/app_name"
         android:textAlignment="center"
-        android:textColor="@color/redt"
+        android:textColor="@color/dark"
         android:textSize="@dimen/app_name_size" />
 
     <LinearLayout
@@ -35,7 +35,7 @@
             android:hint="@string/full_name"
             android:nextFocusDown="@id/edit_text_email"
             android:textColor="@color/colorText"
-            android:textColorHint="@color/colorHint" />
+            android:textColorHint="#ff22" />
 
 
         <EditText
@@ -48,7 +48,7 @@
             android:inputType="textEmailAddress"
             android:nextFocusDown="@id/edit_text_password"
             android:textColor="@color/colorText"
-            android:textColorHint="@color/colorHint" />
+            android:textColorHint="#ff22" />
 
 
         <EditText
@@ -61,7 +61,7 @@
             android:inputType="textPassword"
             android:nextFocusDown="@id/edit_text_phone"
             android:textColor="@color/colorText"
-            android:textColorHint="@color/colorHint" />
+            android:textColorHint="#ff22" />
 
         <EditText
             android:id="@+id/edit_text_phone"
@@ -75,20 +75,32 @@
             android:maxLength="11"
             android:nextFocusDown="@id/button_register"
             android:textColor="@color/colorText"
-            android:textColorHint="@color/colorHint" />
+            android:textColorHint="#ff22" />
         <EditText
             android:id="@+id/edit_text_blood"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
-
+            android:drawableLeft="@drawable/ic_whats"
             android:drawablePadding="@dimen/drawable_padding"
             android:hint="@string/blood"
 
             android:maxLength="3"
             android:nextFocusDown="@id/button_register"
             android:textColor="@color/colorText"
-            android:textColorHint="@color/colorHint" />
+            android:textColorHint="#ff22" />
+        <EditText
+            android:id="@+id/edit_text_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_homep"
+
+            android:drawablePadding="@dimen/drawable_padding"
+            android:hint="@string/add"
+
+            android:nextFocusDown="@id/button_register"
+            android:textColor="@color/colorText"
+            android:textColorHint="#ff22" />
 
 
         <Button

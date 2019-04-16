@@ -4,9 +4,13 @@ import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -21,6 +25,7 @@ public class Login extends AppCompatActivity {
     private EditText email_login,pass;
     private Button login,register;
     private FirebaseAuth mAuth;
+    private CheckBox showpass;
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +37,25 @@ public class Login extends AppCompatActivity {
         pass=(EditText)findViewById(R.id.login_pass);
         login=(Button)findViewById(R.id.login_login);
         register=(Button)findViewById(R.id.login_register);
+        showpass=findViewById(R.id.checkbox);
+        pass.setTransformationMethod(PasswordTransformationMethod.getInstance());
 
+        showpass.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+
+                                                 @Override
+                                                 public void onCheckedChanged(CompoundButton compoundButton , boolean b) {
+                                                     if(b)
+                                                     {
+                                                         pass.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                                                     }
+                                                     else {
+                                                         pass.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                                                     }
+
+                                                 }
+                                             }
+
+        );
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

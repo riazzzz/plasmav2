@@ -10,7 +10,7 @@
     tools:context=".Feedback">
 
     <TextView
-        android:layout_marginLeft="110sp"
+        android:layout_marginLeft="160sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Feedback"
@@ -18,7 +18,7 @@
 
 
         android:fontFamily="cursive"
-        android:textColor="@color/redt"
+        android:textColor="@color/dark"
 
         />
     
@@ -26,6 +26,7 @@
 
         <EditText
 
+            android:textStyle="bold"
             android:paddingLeft="10sp"
             android:layout_marginTop="80sp"
             android:id="@+id/feedback_name"
@@ -36,9 +37,10 @@
             android:hint="@string/full_name"
             android:nextFocusDown="@id/feedback_comment"
             android:textColor="@color/colorText"
-            android:textColorHint="@color/colorHint" />
+            android:textColorHint="#ff22" />
 
     <EditText
+        android:textStyle="bold"
 
         android:paddingLeft="10sp"
 
@@ -50,9 +52,10 @@
         android:hint="Enter your comment"
         android:nextFocusDown="@id/edit_text_email"
         android:textColor="@color/colorText"
-        android:textColorHint="@color/colorHint" />
+        android:textColorHint="#ff22" />
 
     <Button
+
         android:layout_marginTop="20sp"
         android:id="@+id/feedback_send"
         android:layout_width="match_parent"
